@@ -1,5 +1,5 @@
 """
-    (c): Sarowar Alam Minhaj (github.com/sarwar76200)
+    (c): Sarowar Alam Minhaj (https://github.com/sarwar76200)
 
     Python script to convert an arithmetic expression into SAP-1 instructions and Logisim image format
     Usage:
@@ -100,9 +100,9 @@ start_loc: int = int(args["--mem"]) if "--mem" in args else 8
 
 if not clean:
     print()
-    print(f"Expression: {exp}")
-    print(f"Memory Start Location: {get_hex(start_loc, pad=False).upper()}H")
-    print(f"Output: {get_hex(eval(exp)).upper()}")
+    print(f"Expression \t: {exp}")
+    print(f"Start Location \t: {get_hex(start_loc, pad=False).upper()}H")
+    print(f"Output\t\t: {get_hex(eval(exp)).upper()}")
     print()
 
 
